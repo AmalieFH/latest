@@ -16,14 +16,17 @@ import Header from "../components/Header.astro";
 	<body>
 		<Header></Header>
 		<main>
-		<h1>Velkommen til denne hjemmeside</h1>
-		<div><video autoplay muted loop id="myVideo"
-			 src="video/"></video></div>
+			<video src="video/royal_escape_site.mp4" autoplay muted loop id="myVideo" ></video>
 		<div class="grid_1">
 			<img class="forsidebillede" src="billeder/playroom.jpg" alt="">
 			<img class="forsidebillede" src="billeder/playroom.jpg" alt="">
 			<img class="forsidebillede" src="billeder/playroom.jpg" alt="">
 		</div>
+		<h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
+		<p class="mosetekst">Det var midt om natten, og slottet var forladt. Men pludselig hørte man lyden af en morsekode, der blev sendt fra et af vinduerne. En skræmt person turde nærme sig og læste budskabet: "Løs morsekoden og få 15% rabat næste gang du besøger Royal Escapes."
+			Hylder væltede, døre smækkede, og stemmer hviskede fra mørket. Kun de modigste tørrede at tage udfordringen op og løse koden.</p>
+		<img class="mosekodebillede" src="billeder/mosekode1.png" alt="">	
+		
 		</main>
 	</body>
 </html>
@@ -33,7 +36,7 @@ import Header from "../components/Header.astro";
   	box-sizing: border-box;
 	}
 	body{
-		background-color: #1E1E1E;
+		background-color: black;
 		margin: 40px;
 	}
 	main{
@@ -48,7 +51,9 @@ import Header from "../components/Header.astro";
 
     p {
       font-family: "Open Sans";
-    }
+	  color: white;
+	  font-size: 2rem;
+        }
 
 	.grid_1 {
 		display: grid;
@@ -59,6 +64,24 @@ import Header from "../components/Header.astro";
 		margin: 10px;
         padding: 10px;
 		position: center;
+	}
+
+	.moseoverskrift{
+		text-align: center;
+		color: #BF002B;
+	}
+	.mosetekst {
+		text-align: center;
+	}
+
+	.mosekodebillede{
+		width: 70%;
+		position: center;
+	}
+
+	#myVideo {
+ 	  width: 100%;
+
 	}
 	/*    
 	font-family: 'Dosis', sans-serif;
