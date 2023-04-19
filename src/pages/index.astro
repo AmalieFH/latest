@@ -10,7 +10,7 @@ import Header from "../components/Header.astro";
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 		<title>Astro</title>
 	</head>
 	<body>
@@ -18,15 +18,15 @@ import Header from "../components/Header.astro";
 		<main>
 			<video src="video/royal_escape_site.mp4" autoplay muted loop id="myVideo" ></video>
 		<div class="grid_1">
-			<img class="forsidebillede" src="billeder/playroom.jpg" alt="">
-			<img class="forsidebillede" src="billeder/playroom.jpg" alt="">
-			<img class="forsidebillede" src="billeder/playroom.jpg" alt="">
+			<img class="forsidebillede" src="billeder/room1.jpg" alt="">
+			<img class="forsidebillede" src="billeder/room2.jpg" alt="">
+			<img class="forsidebillede" src="billeder/room3.jpg" alt="">
 		</div>
 		<h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
 		<p class="mosetekst">Det var midt om natten, og slottet var forladt. Men pludselig hørte man lyden af en morsekode, der blev sendt fra et af vinduerne. En skræmt person turde nærme sig og læste budskabet: "Løs morsekoden og få 15% rabat næste gang du besøger Royal Escapes."
 			Hylder væltede, døre smækkede, og stemmer hviskede fra mørket. Kun de modigste tørrede at tage udfordringen op og løse koden.</p>
 		<img class="mosekodebillede" src="billeder/mosekode1.png" alt="">	
-		
+		<p class="mosetekstunderbillede">Fortæl os koden i døren næste gang du besøger os</p>
 		</main>
 	</body>
 </html>
@@ -72,6 +72,13 @@ import Header from "../components/Header.astro";
 	}
 	.mosetekst {
 		text-align: center;
+	}
+
+	.mosetekstunderbillede{
+		text-align: center;
+		font-size: 1.3;
+		font-family: "Open Sans";
+		font-style: italic;
 	}
 
 	.mosekodebillede{
