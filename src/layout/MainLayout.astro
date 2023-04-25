@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
- 
- import "../styles/style.css";
+import LinkButton from "../components/LinkButton.astro";
+
   
  const { title } = Astro.props;
  ---
@@ -19,6 +19,33 @@ import Header from "../components/Header.astro";
      <h1>{title}</h1>
      <main>
        <slot />
+       
+       <LinkButton variant="footer" size="medium" linkTo="/index.html" text="Tilbage til kampagnen" />
      </main>
    </body>
+   
  </html>
+
+ <style>
+    * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        margin: 40px;
+      }
+      main {
+        margin: 20px;
+      }
+      h1,
+      h2 {
+        color: white;
+        font-family: "Dosis";
+        font-size: 2rem;
+      }
+      p {
+        color: white;
+        font-family: "Dosis";
+        font-size: 2rem;
+      }
+</style>

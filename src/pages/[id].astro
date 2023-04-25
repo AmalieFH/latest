@@ -1,6 +1,6 @@
 ---
 
-const url = "https://zqnsgctpvojapoxlcqhw.supabase.co";
+const url = "https://zqnsgctpvojapoxlcqhw.supabase.co/rest/v1/Royal_escape";
 const api =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpxbnNnY3Rwdm9qYXBveGxjcWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE0NTc3MTEsImV4cCI6MTk5NzAzMzcxMX0.BJhga2zaWUwoQSQsLQzv7b4yP-b13Abg0K4-uj6e_5Q";
 const options = {
@@ -22,7 +22,8 @@ return data.map((singleTestimonial) => {
   });
   
 const { singleTestimonial } = Astro.props;
-import MainLayout from "../../layouts/MainLayout.astro";
+import MainLayout from "../layout/MainLayout.astro";
+import Testimonial from "../components/Testimonial.astro";
 ---
 
 {
