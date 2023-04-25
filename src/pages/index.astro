@@ -154,21 +154,20 @@ import Testimonials from "../components/Testimonials.astro";
 
       .videogrid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
         margin-right: 20rem;
       }
 
       .ramme {
-        grid-column: 2 / 4;
-        grid-row: 1;
+        grid-area: 1 / 1 / 2 / 2;
+        /* grid-row: 1; */
         width: 100%;
+        height: 100%;
         z-index: 1;
       }
 
       .video {
-        grid-column: 2 / 4;
-        grid-row: 1;
-        margin-top: 12rem;
+        grid-area: 1 / 1 / 2 / 2;
       }
 
       p {
