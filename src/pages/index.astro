@@ -25,9 +25,18 @@ import Testimonials from "../components/Testimonials.astro";
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <lottie-player src="public/pilblod.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
       <div class="grid_1">
-        <img class="forsidebillede" src="billeder/room1.jpg" alt="" />
-        <img class="forsidebillede" src="billeder/room2.jpg" alt="" />
-        <img class="forsidebillede" src="billeder/room3.jpg" alt="" />
+        <div class="royalcabinet">
+          <img class="forsidebillede" src="billeder/room1.jpg" alt="" />
+          <p class="centered1">The Royal Cabinet</p>
+        </div>
+        <div class="theroyaldungeon">
+          <img class="forsidebillede" src="billeder/room2.jpg" alt="" />
+          <p class="centered2">The Royal Dungeon</p>
+        </div>
+        <div class="theroyalplayroom">
+          <img class="forsidebillede" src="billeder/room3.jpg" alt="" />
+          <p class="centered3">The Royal Playroom</p>
+        </div>
       </div>
       <h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
       <p class="mosetekst">
@@ -64,12 +73,6 @@ import Testimonials from "../components/Testimonials.astro";
     font-size: 3rem;
   }
 
-  p {
-    font-family: "Open Sans";
-    color: white;
-    font-size: 2rem;
-  }
-
   .grid_1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -81,12 +84,34 @@ import Testimonials from "../components/Testimonials.astro";
     position: center;
   }
 
+  .centered1,
+  .centered2,
+  .centered3 {
+    position: absolute;
+    top: 56%;
+    left: 28%;
+  }
+
+  .royalcabinet,
+  .theroyaldungeon,
+  .theroyalplayroom {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: "Dosis";
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
   .moseoverskrift {
     text-align: center;
     color: #bf002b;
+    margin: 5%;
   }
   .mosetekst {
     text-align: center;
+    margin: 5%;
+    line-height: 2;
   }
 
   .citat {
@@ -103,8 +128,10 @@ import Testimonials from "../components/Testimonials.astro";
   }
 
   .mosekodebillede {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
-    position: center;
   }
 
   #myVideo {
@@ -128,6 +155,12 @@ import Testimonials from "../components/Testimonials.astro";
     grid-column: 2 / 4;
     grid-row: 1;
     margin-top: 12rem;
+  }
+
+  p {
+    font-family: "Open Sans";
+    color: white;
+    font-size: 2rem;
   }
   /*    
 	font-family: 'Dosis', sans-serif;
