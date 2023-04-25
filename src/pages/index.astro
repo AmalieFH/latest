@@ -20,190 +20,203 @@ import Testimonials from "../components/Testimonials.astro";
     <main>
       <div class="videogrid">
         <video class="video" src="video/royal_escape_site.mp4" autoplay muted loop id="myVideo"></video>
-        <img class="ramme" src="billeder/nybaggrund.png" alt="" />
+        <img class="ramme" src="billeder/ramme.png" alt="" />
       </div>
-      <div class="grid_1">
-        <div class="royalcabinet">
-          <img class="forsidebillede" src="billeder/room1.jpg" alt="" />
-          <p class="centered1">The Royal Cabinet</p>
-        </div>
-        <div class="theroyaldungeon">
-          <img class="forsidebillede" src="billeder/room2.jpg" alt="" />
-          <p class="centered2">The Royal Dungeon</p>
-        </div>
-        <div class="theroyalplayroom">
-          <img class="forsidebillede" src="billeder/room3.jpg" alt="" />
-          <p class="centered3">The Royal Playroom</p>
-        </div>
-      </div>
-      <h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
-      <p class="mosetekst">
-        Det var midt om natten, og slottet var forladt. Men pludselig hørte man lyden af en morsekode, der blev sendt fra et af vinduerne. En skræmt person turde nærme sig og læste budskabet: <mark class="citat">
-          "Løs morsekoden og få 15% rabat næste gang du besøger Royal Escapes."
-        </mark>
-        Hylder væltede, døre smækkede, og stemmer hviskede fra mørket. Kun de modigste tørrede at tage udfordringen op og løse koden.
-      </p>
-      <img class="mosekodebillede" src="billeder/mosekode1.png" alt="" />
-      <p class="mosetekstunderbillede">Fortæl os koden i døren næste gang du besøger os, for at indløse din rabatkode.</p>
-      <div>
-        <p>PLADS TIL AT LIGGE KUNDETING IND HER FRA SUPABASE</p>
-      </div>
-      <div class="grid_1-1-1">
-        <div class="instagram"></div>
-        <div class="facebook">
-          <img class="facebookbillede" src="billeder/facebook.png" alt="" />
-          <img class="instagrambillede" src="billeder/instagram.png" alt="" />
-          <img class="youtubebillede" src="billeder/youtube2.png" alt="" />
-          <img class="tiktokbillede" src="billeder/tiktok.png" alt="" />
-        </div>
-        <div class="tiktok"></div>
-        <div class="youtube"></div>
-        <p class="royaltekst">© 2023 Royal Escape Room</p>
-      </div>
-      <Testimonials />
+      <h1 class="billigste">Københavns billigste og nyeste Escape rooms!</h1>
+      <h2 class="lilletekt">
+        Vores lokaler er nyistandsat og ligger i hjertet af København.<h2>
+          <div class="grid_1">
+            <div class="royalcabinet">
+              <img class="forsidebillede" src="billeder/room1.png" alt="" />
+              <p class="centered1">The Royal Cabinet</p>
+            </div>
+            <div class="theroyaldungeon">
+              <img class="forsidebillede" src="billeder/room2.png" alt="" />
+              <p class="centered2">The Royal Dungeon</p>
+            </div>
+            <div class="theroyalplayroom">
+              <img class="forsidebillede" src="billeder/room3.png" alt="" />
+              <p class="centered3">The Royal Playroom</p>
+            </div>
+          </div>
+          <h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
+          <p class="mosetekst">
+            Det var midt om natten, og slottet var forladt. Men pludselig hørte man lyden af en morsekode, der blev sendt fra et af vinduerne. En skræmt person turde nærme sig og læste budskabet: <mark class="citat">
+              "Løs morsekoden og få 15% rabat næste gang du besøger Royal Escapes."
+            </mark>
+            Hylder væltede, døre smækkede, og stemmer hviskede fra mørket. Kun de modigste tørrede at tage udfordringen op og løse koden.
+          </p>
+          <img class="mosekodebillede" src="billeder/mosekode.png" alt="" />
+          <p class="mosetekstunderbillede">Fortæl os koden i døren næste gang du besøger os, for at indløse din rabatkode.</p>
+          <div>
+            <p>PLADS TIL AT LIGGE KUNDETING IND HER FRA SUPABASE</p>
+          </div>
+          <Testimonials />
+        </h2>
+      </h2>
     </main>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        margin: 40px;
+      }
+      main {
+        margin: 20px;
+      }
+      h1,
+      h2 {
+        color: white;
+        font-family: "Dosis";
+        font-size: 2rem;
+      }
+      .billigste {
+        text-align: center;
+        color: #af2331;
+      }
+      .lilletekt {
+        text-align: center;
+        color: white;
+        font-family: "Dosis";
+        font-size: 1.5rem;
+        margin-left: 200px;
+      }
+      .grid_1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .forsidebillede {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        position: center;
+      }
+
+      .centered1,
+      .centered2,
+      .centered3 {
+        position: absolute;
+        top: 56%;
+        left: 28%;
+        text-align: center;
+        color: white;
+        font-family: "Dosis";
+        font-size: 1.5rem;
+        text-decoration: underline;
+      }
+
+      .royalcabinet,
+      .theroyaldungeon,
+      .theroyalplayroom {
+        position: relative;
+        text-align: center;
+      }
+
+      .moseoverskrift {
+        text-align: center;
+        color: #bf002b;
+        margin: 5%;
+        font-size: 2rem;
+      }
+      .mosetekst {
+        text-align: center;
+        margin: 5%;
+        line-height: 2;
+        font-size: 1.3rem;
+      }
+
+      .citat {
+        font-style: italic;
+        background: none;
+        color: #bf002b;
+      }
+
+      .mosetekstunderbillede {
+        text-align: center;
+        font-size: 1rem;
+        font-family: "Open Sans";
+        font-style: italic;
+      }
+
+      .mosekodebillede {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
+
+      #myVideo {
+        width: 100%;
+      }
+
+      .videogrid {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        position: center;
+      }
+
+      .ramme {
+        grid-area: 1 / 1 / 2 / 2;
+        /* grid-row: 1; */
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .video {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .video {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        margin-top: 12rem;
+      }
+
+      p {
+        font-family: "Open Sans";
+        color: white;
+        font-size: 2rem;
+      }
+
+      .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+      }
+      .instagrambillede {
+        width: 5%;
+        margin: 20px;
+      }
+
+      .facebookbillede {
+        width: 3%;
+        margin: 20px;
+      }
+
+      .tiktokbillede {
+        width: 5%;
+        margin: 20px;
+      }
+
+      .youtubebillede {
+        width: 7%;
+        margin: 20px;
+      }
+
+      .royaltekst {
+        font-size: small;
+      }
+      p {
+        font-family: "Open Sans";
+        color: white;
+        font-size: 1rem;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    background-color: black;
-    margin: 40px;
-  }
-  main {
-    margin: 20px;
-  }
-  h1,
-  h2 {
-    color: white;
-    font-family: "Dosis";
-    font-size: 3rem;
-  }
-
-  .grid_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .forsidebillede {
-    width: 80%;
-    margin: 10px;
-    padding: 10px;
-    position: center;
-  }
-
-  .centered1,
-  .centered2,
-  .centered3 {
-    position: absolute;
-    top: 56%;
-    left: 28%;
-  }
-
-  .royalcabinet,
-  .theroyaldungeon,
-  .theroyalplayroom {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-family: "Dosis";
-    font-size: 2rem;
-    text-decoration: none;
-  }
-
-  .moseoverskrift {
-    text-align: center;
-    color: #bf002b;
-    margin: 5%;
-  }
-  .mosetekst {
-    text-align: center;
-    margin: 5%;
-    line-height: 2;
-  }
-
-  .citat {
-    font-style: italic;
-    background: none;
-    color: #bf002b;
-  }
-
-  .mosetekstunderbillede {
-    text-align: center;
-    font-size: 1.3;
-    font-family: "Open Sans";
-    font-style: italic;
-  }
-
-  .mosekodebillede {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-
-  #myVideo {
-    width: 100%;
-  }
-
-  .videogrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-right: 20rem;
-  }
-
-  .ramme {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .video {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    margin-top: 12rem;
-  }
-
-  p {
-    font-family: "Open Sans";
-    color: white;
-    font-size: 2rem;
-  }
-
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-  }
-  .instagrambillede {
-    width: 5%;
-    margin: 20px;
-  }
-
-  .facebookbillede {
-    width: 3%;
-    margin: 20px;
-  }
-
-  .tiktokbillede {
-    width: 5%;
-    margin: 20px;
-  }
-
-  .youtubebillede {
-    width: 7%;
-    margin: 20px;
-  }
-
-  .royaltekst {
-    font-size: small;
-  }
-  /*    
-	font-family: 'Dosis', sans-serif;
-    font-family: 'Open Sans', sans-serif;*/
-</style>
