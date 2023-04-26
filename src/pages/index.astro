@@ -26,19 +26,30 @@ import AddTestimonial from "../components/AddTestimonial.astro"
       <h1 class="billigste">Københavns billigste og nyeste Escape rooms!</h1>
       <h2 class="lilletekt">
         Vores lokaler er nyistandsat og ligger i hjertet af København.<h2>
-          <div class="grid_1">
+          <div class="grid_1"> 
+
             <div class="royalcabinet">
               <img class="forsidebillede" src="billeder/room1.png" alt="" />
-              <p class="centered1">The Royal Cabinet</p>
+              <div class="middle">
+              <div class="centered1">The Royal Cabinet</div>
             </div>
+            </div>
+   
+
             <div class="theroyaldungeon">
               <img class="forsidebillede" src="billeder/room2.png" alt="" />
+              <div class="middle">
               <p class="centered2">The Royal Dungeon</p>
             </div>
+            </div>
+
             <div class="theroyalplayroom">
               <img class="forsidebillede" src="billeder/room3.png" alt="" />
-              <p class="centered3">The Royal Playroom</p>
+              <div class="middle">
+              <div class="centered3">The Royal Playroom</div>
             </div>
+            </div>
+
           </div>
           <h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
           <p class="mosetekst">
@@ -105,26 +116,64 @@ import AddTestimonial from "../components/AddTestimonial.astro"
       .grid_1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        
       }
       .forsidebillede {
         width: 100%;
         margin: 10px;
         padding: 10px;
         position: center;
+        opacity: 1;
+        display: block;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
       }
 
-      .centered1,
-      .centered2,
-      .centered3 {
-        position: absolute;
-        top: 56%;
-        left: 28%;
-        text-align: center;
-        color: white;
-        font-family: "Dosis";
-        font-size: 1.5rem;
-        text-decoration: underline;
-      }
+      .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+}
+
+.royalcabinet:hover .forsidebillede {
+  opacity: 0.3;
+}
+
+.royalcabinet:hover .middle {
+  opacity: 1;
+}
+
+.theroyaldungeon:hover .forsidebillede {
+  opacity: 0.3;
+}
+
+.theroyaldungeon:hover .middle {
+  opacity: 1;
+}
+
+.theroyalplayroom:hover .forsidebillede {
+  opacity: 0.3;
+}
+
+.theroyalplayroom:hover .middle {
+  opacity: 1;
+}
+
+.centered1,
+ .centered2,
+ .centered3 {
+  background-color: #bf002b;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 
       .royalcabinet,
       .theroyaldungeon,
@@ -132,6 +181,8 @@ import AddTestimonial from "../components/AddTestimonial.astro"
         position: relative;
         text-align: center;
       }
+
+
 
       .moseoverskrift {
         text-align: center;
