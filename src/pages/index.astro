@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 //import MainLayout from "../layout/MainLayout.astro";
 import Testimonials from "../components/Testimonials.astro";
-import AddTestimonial from "../components/AddTestimonial.astro"
+import AddTestimonial from "../components/AddTestimonial.astro";
 ---
 
 <html lang="en">
@@ -23,268 +23,282 @@ import AddTestimonial from "../components/AddTestimonial.astro"
         <video class="video" src="video/royal_escape_site.mp4" autoplay muted loop id="myVideo"></video>
         <img class="ramme" src="billeder/ramme.png" alt="" />
       </div>
-      <h1 class="billigste">Københavns billigste og nyeste Escape rooms!</h1>
-      <h2 class="lilletekt">
-        Vores lokaler er nyistandsat og ligger i hjertet af København.<h2>
-          <div class="grid_1"> 
-
-            <div class="royalcabinet">
-              <img class="forsidebillede" src="billeder/room1.png" alt="" />
-              <div class="middle">
-              <div class="centered1">The Royal Cabinet</div>
-            </div>
-            </div>
-   
-
-            <div class="theroyaldungeon">
-              <img class="forsidebillede" src="billeder/room2.png" alt="" />
-              <div class="middle">
-              <p class="centered2">The Royal Dungeon</p>
-            </div>
-            </div>
-
-            <div class="theroyalplayroom">
-              <img class="forsidebillede" src="billeder/room3.png" alt="" />
-              <div class="middle">
-              <div class="centered3">The Royal Playroom</div>
-            </div>
-            </div>
-
+      <div class="grid_2">
+        <h1 class="billigste">Københavns billigste og nyeste Escape rooms!</h1>
+        <h2 class="lilletekt">Vores lokaler er nyistandsat og ligger i hjertet af København.</h2>
+      </div>
+      <div class="grid_1">
+        <div class="royalcabinet">
+          <img class="forsidebillede" src="billeder/room1.png" alt="" />
+          <div class="middle">
+            <div class="centered1">The Royal Cabinet</div>
           </div>
-          <h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
-          <p class="mosetekst">
-            Det var midt om natten, og slottet var forladt. Men pludselig hørte man lyden af en morsekode, der blev sendt fra et af vinduerne. En skræmt person turde nærme sig og læste budskabet: <mark class="citat">
-              "Løs morsekoden og få 15% rabat næste gang du besøger Royal Escapes."
-            </mark>
-            Hylder væltede, døre smækkede, og stemmer hviskede fra mørket. Kun de modigste tørrede at tage udfordringen op og løse koden.
-          </p>
-          <img class="mosekodebillede" src="billeder/mosekode.png" alt="" />
-          <p class="mosetekstunderbillede">Fortæl os koden i døren næste gang du besøger os, for at indløse din rabatkode.</p>
-          <div>
-            <h2>Det har vores elskede kunder fortalt om os</h2>
+        </div>
+
+        <div class="theroyaldungeon">
+          <img class="forsidebillede" src="billeder/room2.png" alt="" />
+          <div class="middle">
+            <p class="centered2">The Royal Dungeon</p>
           </div>
-          <section class="grid_testimonial">
-            <div>
-              <AddTestimonial/>
-            </div>
-            <div>
-              <Testimonials />
-            </div>
-          </section>
-          
-     
-        </h2>
-      </h2>
-      <div class="grid_1-1-1">
-        <div class="samlet">
-          <img class="instagrambillede" src="billeder/instagram.png" alt="" />
-          <img class="facebookbillede" src="billeder/facebook.png" alt="" />
-          <img class="tiktokbillede" src="billeder/tiktok.png" alt="" />
-          <img class="youtubebillede" src="billeder/youtube2.png" alt="" />
+        </div>
+
+        <div class="theroyalplayroom">
+          <img class="forsidebillede" src="billeder/room3.png" alt="" />
+          <div class="middle">
+            <div class="centered3">The Royal Playroom</div>
+          </div>
         </div>
       </div>
+      <h2 class="moseoverskrift">Spar 15% næste gang du besøger os hos Royal Escapes.</h2>
+      <p class="mosetekst">
+        Det var midt om natten, og slottet var forladt. Men pludselig hørte man lyden af en morsekode, der blev sendt fra et af vinduerne. En skræmt person turde nærme sig og læste budskabet: <mark class="citat">
+          "Løs morsekoden og få 15% rabat næste gang du besøger Royal Escapes."
+        </mark>
+        Hylder væltede, døre smækkede, og stemmer hviskede fra mørket. Kun de modigste tørrede at tage udfordringen op og løse koden.
+      </p>
+      <img class="mosekodebillede" src="billeder/mosekode.png" alt="" />
+      <p class="mosetekstunderbillede">Fortæl os koden i døren næste gang du besøger os, for at indløse din rabatkode.</p>
+      <div>
+        <h2>Det har vores elskede kunder fortalt om os</h2>
+      </div>
+      <section class="grid_testimonial">
+        <div>
+          <AddTestimonial />
+        </div>
+        <div>
+          <Testimonials />
+        </div>
+      </section>
     </main>
-
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        background-color: black;
-        margin: 40px;
-      }
-      main {
-        margin: 20px;
-      }
-      h1,
-      h2 {
-        color: white;
-        font-family: "Dosis";
-        font-size: 2rem;
-      }
-      .billigste {
-        text-align: center;
-        color: #af2331;
-      }
-      .lilletekt {
-        text-align: center;
-        color: white;
-        font-family: "Dosis";
-        font-size: 1.5rem;
-        margin-left: 200px;
-      }
-      .grid_1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
-      }
-      .forsidebillede {
-        width: 100%;
-        margin: 10px;
-        padding: 10px;
-        position: center;
-        opacity: 1;
-        display: block;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-      }
-
-      .middle {
-      transition: .5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-}
-
-.royalcabinet:hover .forsidebillede {
-  opacity: 0.3;
-}
-
-.royalcabinet:hover .middle {
-  opacity: 1;
-}
-
-.theroyaldungeon:hover .forsidebillede {
-  opacity: 0.3;
-}
-
-.theroyaldungeon:hover .middle {
-  opacity: 1;
-}
-
-.theroyalplayroom:hover .forsidebillede {
-  opacity: 0.3;
-}
-
-.theroyalplayroom:hover .middle {
-  opacity: 1;
-}
-
-.centered1,
- .centered2,
- .centered3 {
-  background-color: #bf002b;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-
-      .royalcabinet,
-      .theroyaldungeon,
-      .theroyalplayroom {
-        position: relative;
-        text-align: center;
-      }
-
-
-
-      .moseoverskrift {
-        text-align: center;
-        color: #bf002b;
-        margin: 5%;
-        font-size: 2rem;
-      }
-      .mosetekst {
-        text-align: center;
-        margin: 5%;
-        line-height: 2;
-        font-size: 1.3rem;
-      }
-
-      .citat {
-        font-style: italic;
-        background: none;
-        color: #bf002b;
-      }
-
-      .mosetekstunderbillede {
-        text-align: center;
-        font-size: 1rem;
-        font-family: "Open Sans";
-        font-style: italic;
-      }
-
-      .mosekodebillede {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-      }
-
-      #myVideo {
-        width: 100%;
-      }
-
-      .videogrid {
-        display: grid;
-        /* grid-template-columns: repeat(3, 1fr); */
-        position: center;
-      }
-
-      .ramme {
-        grid-area: 1 / 1 / 2 / 2;
-        /* grid-row: 1; */
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-      }
-
-      .video {
-        grid-area: 1 / 1 / 2 / 2;
-      }
-
-      p {
-        font-family: "Open Sans";
-        color: white;
-        font-size: 2rem;
-      }
-
-      .grid_1-1-1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        text-align: center;
-      }
-      .instagrambillede {
-        width: 5%;
-        margin: 20px;
-      }
-
-      .facebookbillede {
-        width: 3%;
-        margin: 20px;
-      }
-
-      .tiktokbillede {
-        width: 5%;
-        margin: 20px;
-      }
-
-      .youtubebillede {
-        width: 7%;
-        margin: 20px;
-      }
-
-      .royaltekst {
-        font-size: small;
-      }
-      p {
-        font-family: "Open Sans";
-        color: white;
-        font-size: 1rem;
-      }
-
-      .grid_testimonial{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        color: white;
-      }
-
-    </style>
   </body>
+  <div class="grid_1-1-1">
+    <div class="samlet">
+      <img class="instagrambillede" src="billeder/instagram.png" alt="" />
+      <img class="facebookbillede" src="billeder/facebook.png" alt="" />
+      <img class="tiktokbillede" src="billeder/tiktok.png" alt="" />
+      <img class="youtubebillede" src="billeder/youtube2.png" alt="" />
+    </div>
+  </div>
 </html>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: black;
+    margin: 40px;
+  }
+  main {
+    margin: 20px;
+  }
+  h1,
+  h2 {
+    color: white;
+    font-family: "Dosis";
+    font-size: 2rem;
+  }
+  .billigste {
+    text-align: center;
+    color: #af2331;
+  }
+  .lilletekt {
+    text-align: center;
+    color: white;
+    font-family: "Dosis";
+    font-size: 1.5rem;
+    margin-left: 200px;
+  }
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .forsidebillede {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    position: center;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .royalcabinet:hover .forsidebillede {
+    opacity: 0.3;
+  }
+
+  .royalcabinet:hover .middle {
+    opacity: 1;
+  }
+
+  .theroyaldungeon:hover .forsidebillede {
+    opacity: 0.3;
+  }
+
+  .theroyaldungeon:hover .middle {
+    opacity: 1;
+  }
+
+  .theroyalplayroom:hover .forsidebillede {
+    opacity: 0.3;
+  }
+
+  .theroyalplayroom:hover .middle {
+    opacity: 1;
+  }
+
+  .centered1,
+  .centered2,
+  .centered3 {
+    background-color: #bf002b;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .royalcabinet,
+  .theroyaldungeon,
+  .theroyalplayroom {
+    position: relative;
+    text-align: center;
+  }
+
+  .moseoverskrift {
+    text-align: center;
+    color: #bf002b;
+    margin: 5%;
+    font-size: 2rem;
+  }
+  .mosetekst {
+    text-align: center;
+    margin: 5%;
+    line-height: 2;
+    font-size: 1.3rem;
+  }
+
+  .citat {
+    font-style: italic;
+    background: none;
+    color: #bf002b;
+  }
+
+  .mosetekstunderbillede {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Open Sans";
+    font-style: italic;
+  }
+
+  .mosekodebillede {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  #myVideo {
+    width: 100%;
+  }
+
+  .videogrid {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    position: center;
+  }
+
+  .ramme {
+    grid-area: 1 / 1 / 2 / 2;
+    /* grid-row: 1; */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .video {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  p {
+    font-family: "Open Sans";
+    color: white;
+    font-size: 2rem;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .instagrambillede {
+    width: 5%;
+    margin: 20px;
+  }
+
+  .facebookbillede {
+    width: 3%;
+    margin: 20px;
+  }
+
+  .tiktokbillede {
+    width: 5%;
+    margin: 20px;
+  }
+
+  .youtubebillede {
+    width: 7%;
+    margin: 20px;
+  }
+
+  .royaltekst {
+    font-size: small;
+  }
+  p {
+    font-family: "Open Sans";
+    color: white;
+    font-size: 1rem;
+  }
+
+  .grid_testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+  }
+
+  @media (max-width: 750px) {
+    /*mobile*/
+    .grid_testimonial {
+      display: grid;
+      grid-template-columns: 1fr;
+      color: white;
+    }
+    .grid_1 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .grid_2 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .mosekodebillede {
+      width: 100%;
+    }
+    .grid_1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+</style>
