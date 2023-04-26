@@ -10,8 +10,11 @@
   
     <button type="submit">Submit</button>
   </form>
+
+  
   
   <script>
+    
     // const headers = ;
   
     function addTestimonial(newTestimonial) {
@@ -41,20 +44,24 @@
           window.location.href = "/addTestimonialFeedback";
         });
     }
-  
+
     const form = document.querySelector("form");
     console.log("form.elements", form.elements);
   
     form.addEventListener("submit", (e) => {
       e.preventDefault();
   
+      
       const obj = {
         title: form.elements.title.value,
         description: form.elements.long.value,
       };
   
       addTestimonial(obj);
+
+      property “title" does not exist on type "HTMLFormControlsCollection"
     });
+
   </script>
   
   <style>
